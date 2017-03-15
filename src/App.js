@@ -22,11 +22,7 @@ class App extends Component {
         <Router>
           <div>
           <Links />
-            <Route exact path="/" render={() => {
-              return <p className="App-intro">
-                        To get started, edit <code>src/App.js</code> and save to reload.
-                    </p>}
-            } />
+            <Route exact path="/" render={() => <p></p>} />
             <Route path="/new" render={() => <p>Add new element</p>} />
             <Route path="/index" render={() => <p>index elements</p>} />
           </div>
