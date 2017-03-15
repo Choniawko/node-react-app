@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 const port     = process.env.PORT || 8080;
 
 const mongoose   = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/test');
+mongoose.connect('mongodb://heroku_vj4mnbbn:udev0r2fukkdfq1gbm9igmtrtn@ds063725.mlab.com:63725/heroku_vj4mnbbn');
 
 
 // ROUTES FOR OUR API

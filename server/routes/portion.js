@@ -17,6 +17,12 @@ router.post('/new', (req, res) => {
 
 router.get('/', (req, res) => {
     const portions = Portion.find({}, (err, portions) => {
+        if (err) {
+            res.json({
+                success: false,
+                err
+            })
+        }
         console.log(portions);
         res.json({
             success: true,
